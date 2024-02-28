@@ -65,9 +65,6 @@
 
 						<div class="card-cuenta">
 							<div>
-								<div class=" cuenta_icono">
-									<iconify-icon class="icono" icon="mdi:bank" width="32"></iconify-icon>
-								</div>
 								<h4>${cuenta.nombre}</h4>
 								<p>${cuenta.total}</p>
 							</div>

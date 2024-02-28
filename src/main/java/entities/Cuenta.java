@@ -133,7 +133,7 @@ public class Cuenta implements Serializable {
 	public void ajustarSaldo(double valor) {
 		// TODO implement here
 	}
-	
+
 	/** Método que retona la información de una cuenta específica **/
 	public static CuentaDTO getCuentaInfo(int idCuenta) {
 		List<Movimiento> movimientos = Movimiento.getAllByCuenta(idCuenta);

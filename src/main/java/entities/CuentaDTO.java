@@ -6,7 +6,7 @@ public class CuentaDTO {
 
 	private Cuenta cuenta;
 	private List<Movimiento> movimientos;
-	
+
 	public CuentaDTO() {
 	}
 

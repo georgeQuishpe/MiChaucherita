@@ -57,7 +57,7 @@
 .transaccion {
     display: grid;
     /*grid de 5 columnas*/
-    grid-template-columns: 0.25fr 0.5fr 1fr 1fr 2fr 1fr;
+    grid-template-columns: 0.25fr 0.5fr 1fr 1fr 2fr;
     align-items: center;
     /*alinear horizontalmente en el centro cada grid*/
     justify-items: center;

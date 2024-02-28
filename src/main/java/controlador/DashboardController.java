@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import entities.Categoria;
 import entities.Cuenta;
 import entities.CuentaDTO;
@@ -69,10 +70,10 @@ public class DashboardController extends HttpServlet {
 		// 1.- obtengo datos
 		int idCuenta = Integer.parseInt(request.getParameter("idCuenta"));
 		// 2.- Llamo al Modelo
-		CuentaDTO  cuentaDTO = Cuenta.getCuentaInfo(idCuenta);
+		CuentaDTO  cuentaInfo = Cuenta.getCuentaInfo(idCuenta);
 		// 3.- llamo a la vista
-		request.setAttribute("cuenta", cuentaDTO.getCuenta());
-		request.setAttribute("movimientos", cuentaDTO.getMovimientos());
+		request.setAttribute("cuenta", cuentaInfo.getCuenta());
+		request.setAttribute("movimientos", cuentaInfo.getMovimientos());
 		request.getRequestDispatcher("/jsp/cuenta.jsp").forward(request, response);
 	}
 
