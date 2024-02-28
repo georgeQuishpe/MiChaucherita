@@ -130,8 +130,6 @@ label{
   transform: var(--transform-boton-active);
 }
 
-
-
 .boton2 {
   background-color: var(--color-boton-2);
 }
