@@ -65,7 +65,7 @@
 								<h4>Movimiento</h4>
 							</div>
 							<div>
-								<h4>ID </h4>
+								<h4>ID</h4>
 							</div>
 							<div>
 								<h4>Tipo de Transacción</h4>
@@ -87,8 +87,16 @@
 					<div class="transaccion">
 						<!-- Ícono de tipo de transacción -->
 						<div class="transaccion_icono">
-							<iconify-icon class="icono deposito_color"
-								icon="ph:arrow-down-bold" width="18"></iconify-icon>
+							<c:choose>
+								<c:when test="${movimiento.tipo eq 'INGRESO'}">
+									<iconify-icon class="icono deposito_color"
+										icon="ph:arrow-down-bold" width="18"></iconify-icon>
+								</c:when>
+								<c:when test="${movimiento.tipo eq 'EGRESO'}">
+									<iconify-icon class="icono retiro_color"
+										icon="ph:arrow-up-bold" width="18"></iconify-icon>
+								</c:when>
+							</c:choose>
 						</div>
 
 						<!-- ID de transacción -->
