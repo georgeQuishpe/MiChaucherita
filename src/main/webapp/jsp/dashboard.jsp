@@ -44,7 +44,7 @@
 			<main class="balance">
 				<iconify-icon class="icono" icon="cryptocurrency:usd"
 					style="color: white;" width="32"></iconify-icon>
-				<h1>3000.00</h1>
+				<h1>1900.00</h1>
 			</main>
 
 

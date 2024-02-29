@@ -80,6 +80,12 @@
 								<h4>Concepto</h4>
 							</div>
 							<div>
+								<h4>Cuenta Origen</h4>
+							</div>
+							<div>
+								<h4>Cuenta Destino</h4>
+							</div>
+							<div>
 								<h4>Monto</h4>
 							</div>
 						</div>
@@ -120,6 +126,14 @@
 						<!-- Concepto de transacción -->
 						<div class="concepto">
 							<p>${movimiento.concepto}</p>
+						</div>
+						
+						<div class="cuenta_origen">
+							<p>${movimiento.origen.nombre}</p>
+						</div>
+						
+						<div class="cuenta_destino">
+							<p>${movimiento.destino.nombre}</p>
 						</div>
 
 						<!-- Monto de transacción -->
