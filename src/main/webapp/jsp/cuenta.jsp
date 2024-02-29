@@ -57,29 +57,63 @@
 			</header>
 
 			<main id="transacciones" class="mostrar">
-				<c:forEach items="${movimientos}" var="movimiento">
+				<c:forEach items="${movimientos}" var="movimiento" varStatus="loop">
+					<c:if test="${loop.first}">
+						<div class="transaccion">
+							<!-- Nombres de las columnas -->
+							<div>
+								<h4>Movimiento</h4>
+							</div>
+							<div>
+								<h4>ID </h4>
+							</div>
+							<div>
+								<h4>Tipo de Transacción</h4>
+							</div>
+							<div>
+								<h4>Categoría</h4>
+							</div>
+							<div>
+								<h4>Fecha</h4>
+							</div>
+							<div>
+								<h4>Concepto</h4>
+							</div>
+							<div>
+								<h4>Monto</h4>
+							</div>
+						</div>
+					</c:if>
 					<div class="transaccion">
 						<!-- Ícono de tipo de transacción -->
 						<div class="transaccion_icono">
 							<iconify-icon class="icono deposito_color"
 								icon="ph:arrow-down-bold" width="18"></iconify-icon>
 						</div>
-						
+
 						<!-- ID de transacción -->
 						<div class="id_transaccion">${movimiento.id}</div>
-						
-						<!-- Info de transacción (tipo y fecha)-->
-						<div class="transaccion_info">
+
+						<!-- Info de transacción (tipo)-->
+						<div class="transaccion_tipo">
 							<h4>${movimiento.tipo}</h4>
+						</div>
+
+						<!-- Info de transacción (tipo)-->
+						<div class="transaccion_categoria">
+							<h4>${movimiento.categoria.nombre}</h4>
+						</div>
+
+						<!-- Info de transacción (fecha)-->
+						<div class="transaccion_fecha">
 							<p>${movimiento.fecha}</p>
 						</div>
 
 						<!-- Concepto de transacción -->
 						<div class="concepto">
-							<h4>Concepto</h4>
 							<p>${movimiento.concepto}</p>
 						</div>
-						
+
 						<!-- Monto de transacción -->
 						<div class="transaccion_monto">
 							<h4>${movimiento.monto}</h4>

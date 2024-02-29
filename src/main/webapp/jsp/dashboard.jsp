@@ -81,7 +81,7 @@
 								</a> <a
 									href="DashboardController?ruta=verCuenta&idCuenta=${cuenta.id}">
 									<iconify-icon icon="ion:eye" width="18"></iconify-icon> <span
-									class="texto_boton">Detalle</span>
+									class="texto_boton">Ver cuenta</span>
 								</a>
 
 

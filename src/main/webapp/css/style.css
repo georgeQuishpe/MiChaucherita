@@ -224,7 +224,7 @@ label{
 .transaccion {
   display: grid;
   /*grid de 5 columnas*/
-  grid-template-columns: 0.25fr 0.25fr 0.5fr 0.75fr 0.25fr;
+  grid-template-columns: 0.2fr 0.2fr 0.4fr 0.4fr 1fr 0.6fr 0.3fr;
   align-items: center;
   /*alinear horizontalmente en el centro cada grid*/
   justify-items: center;
